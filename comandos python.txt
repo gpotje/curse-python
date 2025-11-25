@@ -1,0 +1,21 @@
+how to config python for windonw
+
+python 
+
+PS C:\Users\gpotj> Get-ExecutionPolicy
+Restricted
+
+python -m venv venv
+
+Set-ExecutionPolicy AllSigned -Force
+
+
+.\venv\Scripts\activate
+
+
+cd C:\Users\gpotj\Desktop\python
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\Activate.ps1
+
+

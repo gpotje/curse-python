@@ -1,0 +1,50 @@
+# Arquivos de cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual
+venv/
+.venv/
+env/
+ENV/
+
+# Configurações de IDEs/editores
+.vscode/
+.idea/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Distribuição / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Arquivos de testes/coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+*.py,cover
+.cache
+
+# PyInstaller
+*.spec
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Django / Flask / outras libs que geram arquivos temporários
+*.sqlite3
+instance/
+*.pot
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
