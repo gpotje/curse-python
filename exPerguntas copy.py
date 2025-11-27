@@ -23,7 +23,14 @@ questions = [
 
 for q in questions:
     print(q['question'])
-    d1 = input()
+    
+
+    # for i, s in enumerate(q['option']):
+    #     print(f'{i})' , s)
+    # print()
+
+    d1 = input('type your answer here...')
+
     if d1 == q['answer']:
         print("Is correct!")
     else:
