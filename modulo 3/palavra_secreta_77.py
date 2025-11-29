@@ -14,6 +14,7 @@ na palavra secreta.
 Faça a contagem de tentativas do seu
 usuário.
 """
+from modulo import clear_terminal
 
 secret_word = input('Digite uma palavra secreta:')
 format_word = "*" * len(secret_word)
@@ -26,12 +27,6 @@ palavra_final = ''
 
 
 letter = input('Enter with only one letter:')
-
-
-
-print(format_word)
-
-
 
 while fim_excucao == False:
     
@@ -63,9 +58,10 @@ while fim_excucao == False:
 
     if quant == len(secret_word):
         fim_excucao = True
-        print("letras que já foram acertadas: " + palavra_final)
-        print('Parabens vc completou a palavra com sucesso!!!!')
-
+        clear_terminal()
+        print('VOCÊ GANHOU!! PARABÉNS!')
+        print("A palavra era: " + palavra_final)
+ 
 
 
 
