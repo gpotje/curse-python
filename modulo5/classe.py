@@ -12,9 +12,11 @@ print(p1.nome)
 print(p1.sobrenome)
 p1.andar()
         
-p1 = Pessoa('Maria','Souza')
+# p1 = Pessoa('Maria','Souza')
 
-print(p1.nome)
-print(p1.sobrenome)
-p1.andar()
-        
+# print(p1.nome)
+# print(p1.sobrenome)
+# p1.andar()
+
+print(p1.__dict__)
+print(vars(p1))
