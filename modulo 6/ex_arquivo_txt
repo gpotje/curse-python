@@ -1,0 +1,19 @@
+# Define o nome do arquivo
+nome_arquivo = "meu_arquivo.txt"
+# Define o nome do arquivo
+nome_arquivo = "arquivo_manual.txt"
+
+# Abre o arquivo no modo de escrita ('w')
+arquivo = open(nome_arquivo, 'w', encoding='utf-8')
+
+# Escreve no arquivo
+arquivo.write("Conteúdo escrito manualmente.")
+arquivo.write("\nOutra linha.")
+
+for i in range(10):
+    arquivo.write(f"Seu texto {i}\n")
+
+# Fecha o arquivo (importante!)
+arquivo.close()
+
+print(f"Arquivo '{nome_arquivo}' criado e escrito com sucesso!")
