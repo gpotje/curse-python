@@ -1,0 +1,2 @@
+Olá, este é o conteúdo do meu arquivo TXT!
+Python facilita muito a manipulação de arquivos.
