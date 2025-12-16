@@ -9,42 +9,40 @@
 # desfazer = ['fazer café',] -> Refazer ['caminhar']
 # desfazer = [] -> Refazer ['caminhar', 'fazer café']
 # refazer = todo ['fazer café']
-import os
 
-
-lista_tarefas  = ['tomar banho']
-lista_tarefas_clone  = []
-
-tafera_comando = ''
-
-
-while True:
-   
+def desenha_menu():
    print("=================================")
    print('Digite uma tarefa ou comando:')
    print('listar, desfazer, refazer, clean')
    print("=================================")
    print()
-   
-   tafera_comando = input()
 
-
-   if tafera_comando == 'listar':
+def listar(lista):
+    print()
+    print("TAREFAS:")
+    if not lista:
         print()
-        print("TAREFAS:")
-        for tarefa in lista_tarefas:
+        print("=== A lista está vazia! Inseria um item ===")
+    else:
+        for tarefa in lista:
             print(tarefa)
-        print()
-   elif tafera_comando == 'clean':
-       os.system("cls")
-   elif tafera_comando == 'desfazer':
-       lista_tarefas_clone.append(lista_tarefas[-1])
-       del lista_tarefas[-1]
-   elif tafera_comando == 'refazer':
-       lista_tarefas.append(lista_tarefas_clone[-1])
-       del lista_tarefas_clone[-1]
-   else:
-     lista_tarefas.append(tafera_comando)
+    print()
+
+def desfazer(lista_tarefas,lista_tarefas_clone):
+    if not lista_tarefas:
+        print("A lista está vazia!")
+    else:
+        lista_tarefas_clone.append(lista_tarefas[-1])
+        del lista_tarefas[-1]
+
+def refazer(lista_tarefas,lista_tarefas_clone):
+    if not lista_tarefas_clone:
+        print("A lista está vazia!")
+    else:
+        lista_tarefas.append(lista_tarefas_clone[-1])
+        del lista_tarefas_clone[-1]
+
+
 
 
 
