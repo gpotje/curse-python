@@ -10,7 +10,7 @@
 # desfazer = [] -> Refazer ['caminhar', 'fazer café']
 # refazer = todo ['fazer café']
 import os
-from ex_194_funcao import *
+from ex_194_funcoes import listar, refazer, desfazer, desenha_menu, gravaJsonFuncao
 
 
 lista_tarefas = []
@@ -19,27 +19,29 @@ lista_tarefas_clone  = []
 
 while True:
 
-
    desenha_menu()
    tafera_comando = input()
 
    if tafera_comando == 'listar':
-        listar()
+        listar('comandos')
 
    elif tafera_comando == 'clean':
        os.system("cls")
 
    elif tafera_comando == 'desfazer':
        desfazer()
-       listar()
+       listar('comandos')
 
    elif tafera_comando == 'refazer':
        refazer()
-       listar()
+       listar('comandos')
+
+   elif tafera_comando == 'LRD':
+       listar('refazerOuDesfazer')
 
    else:
-     lista_tarefas.append(tafera_comando)
-     gravaJson(lista_tarefas,'comandos')
+     gravaJsonFuncao(tafera_comando)
+     
 
 
 

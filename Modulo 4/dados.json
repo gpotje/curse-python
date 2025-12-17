@@ -1,5 +1,9 @@
 {
-    "comandos": [],
-    "refazer": [],
-    "desfazer": []
+    "comandos": [
+        "tomar banho "
+    ],
+    "refazerOuDesfazer": [
+        "teste1",
+        "tomar banho 2 "
+    ]
 }
