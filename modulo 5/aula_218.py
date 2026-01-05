@@ -1,4 +1,6 @@
-#Composição
+#Associação - usa
+#Agregação - tem
+#Composição - é dono de
 
 class Cliente: 
 
